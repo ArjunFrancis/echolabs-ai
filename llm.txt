@@ -1,0 +1,265 @@
+# EchoLabs AI - Project Context for AI Agents
+
+## Quick Reference
+
+**Repository:** https://github.com/ArjunFrancis/Echolabs-AI  
+**Live Site:** https://echolabs-ai.com  
+**Mission:** Enterprise LLM/AI agent evaluation, testing, compliance monitoring & training platform for UAE markets  
+**Business Model:** Dual-model (SaaS Platform + Consulting Services)  
+**Target Markets:** UAE Financial Services, Government, Healthcare, Telecom, Energy
+
+---
+
+## Project Overview
+
+EchoLabs AI is a comprehensive platform that provides UAE enterprises with:
+
+1. **Evaluation & Testing** - Multi-modal LLM/agent testing (text, vision, audio), reasoning benchmarks, tool-use validation
+2. **Compliance Monitoring** - UAE-specific regulatory tracking (NDMO, DIFC, ADGM), bias detection, privacy impact analysis
+3. **Real-Time Monitoring** - Agent performance tracking, cost analytics, error detection, audit trails
+4. **Consulting Services** - AI readiness audits, unbiased LLM selection, pre-sales ROI analysis, team training
+5. **Value-First Lead Generation** - Free AI readiness checklists, compliance guides, prompt libraries
+
+---
+
+## Repository Structure
+
+### Core Platform
+- `/platform/` - Evaluation engine, multimodal testing, dataset management, MVP feature specs
+- `/ui-design/` - Agent monitoring UI, admin portal, compliance dashboard designs
+
+### Consulting & Services
+- `/consulting/` - AI readiness audit, LLM selection framework, ROI analysis
+- `/frameworks/` - AI maturity model, case study templates, audit frameworks
+- `/training/` - 5-day AI bootcamp curriculum
+
+### Automation & Marketing
+- `/automation/` - Lead scoring, personalized outreach, content publishing, newsletter system
+- `/playbooks/` - Cold outreach playbook, sales enablement
+
+### Lead Generation & Strategy
+- `/giveaways/` - Free resources (AI ROI calculator, compliance checklist, sector-specific prompt libraries)
+- `/strategy/` - Pricing & packaging, partnership program
+- `/research/` - Competitor intelligence, market analysis
+
+### Deliverables
+- `/deliverables/` - Executive summary, technical specifications
+
+---
+
+## Key Documents for AI Agents
+
+### For Coding/Implementation Agents
+Start with:
+1. **[Technical Specifications](deliverables/technical-specifications.md)** - Complete developer guide with architecture, tech stack, data models, APIs
+2. **[MVP Feature Specs](platform/mvp-feature-specs.md)** - V1 product scope and priorities
+3. **[Evaluation Framework](platform/evaluation-framework.md)** - Core evaluation engine architecture
+4. **[UI Design Specs](ui-design/)** - Implementation-ready interface specifications
+
+### For Research/Planning Agents
+Start with:
+1. **[Executive Summary](deliverables/executive-summary.md)** - Business context and strategy
+2. **[Competitor Intelligence](research/competitor-intelligence.md)** - Market positioning
+3. **[AI Maturity Model](frameworks/ai-maturity-model.md)** - Enterprise readiness framework
+
+### For Marketing/Content Agents
+Start with:
+1. **[Cold Outreach Playbook](playbooks/cold-outreach-playbook.md)** - Sales approach
+2. **[Lead Scoring System](automation/lead-scoring-system.md)** - Qualification methodology
+3. **[Giveaways](giveaways/)** - Lead magnet assets
+
+---
+
+## Design Principles
+
+1. **UAE-First** - All features, compliance, and content tailored for UAE enterprises
+2. **Vendor-Neutral** - Unbiased LLM/vendor evaluation and selection
+3. **Compliance-First** - NDMO, DIFC, ADGM regulatory compliance built-in
+4. **Value-First** - Free resources and ROI-focused consulting before platform sales
+5. **Implementation-Ready** - Every doc includes technical details, success metrics, and sources
+
+---
+
+## Tech Stack (Recommended)
+
+**Frontend:** Next.js 14+, TypeScript, Tailwind CSS, Recharts  
+**Backend:** FastAPI (Python), PostgreSQL, Redis, AWS S3  
+**AI/ML:** LangChain, AWS Bedrock, pgvector, custom eval harness  
+**DevOps:** AWS EKS, GitHub Actions, Datadog, Docker  
+**Compliance:** UAE data residency, encryption at rest/transit, audit logging
+
+---
+
+## Development Priorities
+
+### Phase 1: MVP (Weeks 1-12)
+- Core evaluation engine (LLM API integration, test execution, scoring)
+- Agent monitoring UI (real-time status, metrics, logs)
+- User authentication and multi-tenancy
+- Basic compliance dashboard
+
+### Phase 2: Enterprise Features (Weeks 13-24)
+- Advanced compliance testing (bias, privacy, safety)
+- Multimodal evaluation (vision, audio)
+- Dataset management and versioning
+- RLHF pipeline
+
+### Phase 3: Automation & Scale (Weeks 25-36)
+- Marketing automation agents (lead scoring, outreach)
+- Advanced analytics and reporting
+- Partner program portal
+- API rate limiting and quotas
+
+---
+
+## Key Constraints & Requirements
+
+### Regulatory Compliance
+- **NDMO:** Data sovereignty, cross-border data transfer rules
+- **DIFC:** Financial sector compliance for banking/insurance clients
+- **ADGM:** Abu Dhabi Global Market regulations
+- **Data Residency:** UAE region storage (AWS me-south-1)
+
+### Technical Requirements
+- Multi-tenancy with logical data isolation
+- API-first architecture (REST + GraphQL)
+- Real-time monitoring (SSE or WebSockets)
+- Horizontal scaling (Kubernetes)
+- High availability (99.9% uptime SLA)
+
+### Business Requirements
+- Freemium model (free AI readiness tools → paid consulting → platform subscription)
+- Partner-driven go-to-market (consulting firms, cloud providers)
+- Arabic language support (UI, content, LLM evaluation)
+- UAE-specific benchmarks and datasets
+
+---
+
+## Documentation Standards
+
+All documents follow this format:
+```markdown
+---
+**Task:** [Document purpose]  
+**Created:** [Date]  
+**Status:** [Draft/Review/Final/Skeleton]  
+---
+
+# [Document Title]
+
+## Executive Summary
+[2-3 sentences for C-level readers]
+
+## Technical Details
+[Full technical specification]
+
+## Implementation Notes
+[Guidance for developers]
+
+## Success Metrics
+[KPIs and validation criteria]
+
+## Sources & References
+[Research citations]
+
+## Related Documents
+[Links to related specs]
+```
+
+---
+
+## Common Patterns & Conventions
+
+### File Naming
+- Use kebab-case: `ai-readiness-audit-framework.md`
+- Be descriptive: `multimodal-testing-architecture.md` not `testing.md`
+
+### Git Commits
+- Format: `Area: Description`
+- Examples: `Repo QA: README uplift`, `Platform: Add eval engine spec`
+
+### Code Style
+- **Python:** Black formatter, type hints, docstrings
+- **TypeScript:** ESLint, Prettier, strict mode
+- **API:** RESTful naming, versioned endpoints (`/api/v1/`)
+
+---
+
+## UAE Market Context
+
+### Target Sectors
+1. **Financial Services** - Compliance-heavy, high-value clients, DIFC regulations
+2. **Government** - Smart city initiatives, citizen services, data sovereignty focus
+3. **Healthcare** - Privacy-sensitive, insurance claims, patient care AI
+4. **Telecom** - Network optimization, customer service, real-time performance
+5. **Energy/Utilities** - Safety-critical systems, predictive maintenance
+
+### Buyer Personas
+- **CTO/CIO:** Technical decision-makers, concerned with integration and scalability
+- **Chief Risk Officer:** Compliance and regulatory focus
+- **Head of Digital Innovation:** Business value and ROI focus
+- **Chief Data Officer:** Data governance and quality focus
+
+### Procurement Patterns
+- Long sales cycles (6-12 months for enterprise)
+- Proof-of-concept (PoC) required before commitment
+- Budget allocation tied to fiscal year (Q1 planning)
+- Preference for local partners and UAE-based vendors
+
+---
+
+## Success Criteria for Implementation
+
+### For Platform
+- [ ] Core evaluation engine functional (OpenAI, Anthropic, AWS Bedrock integration)
+- [ ] Agent monitoring dashboard with real-time updates
+- [ ] Multi-tenancy with data isolation
+- [ ] UAE compliance testing (NDMO, DIFC, ADGM)
+- [ ] User authentication and RBAC
+- [ ] API documentation (OpenAPI/Swagger)
+
+### For Consulting Services
+- [ ] AI Readiness Audit framework documented and tested
+- [ ] LLM Selection methodology with scoring rubric
+- [ ] ROI Analysis templates with UAE-specific data
+- [ ] Training curriculum and certification program
+
+### For Marketing & Lead Generation
+- [ ] Free AI readiness checklist (PDF download)
+- [ ] UAE compliance quick reference guide
+- [ ] Sector-specific prompt libraries (finance, government, healthcare)
+- [ ] Lead scoring and outreach automation operational
+
+---
+
+## Related Resources
+
+**Official Documentation:**
+- UAE NDMO Guidelines: https://sdg.gov.ae/en/ndmo
+- DIFC Data Protection Law: https://www.difc.ae/business/laws-regulations/
+- ADGM Data Protection Regulations: https://www.adgm.com/
+
+**Technical References:**
+- LangChain Docs: https://docs.langchain.com/
+- AWS Bedrock: https://aws.amazon.com/bedrock/
+- HELM Benchmarks: https://crfm.stanford.edu/helm/
+
+**Market Intelligence:**
+- UAE AI Office: https://ai.gov.ae/
+- Dubai Future Foundation: https://www.dubaifuture.ae/
+- GITEX Technology Week: https://www.gitex.com/
+
+---
+
+## Contact & Support
+
+- **Repository Owner:** Arjun Francis ([@ArjunFrancis](https://github.com/ArjunFrancis))
+- **Company:** EchoMinds AI (https://echomindsai.com)
+- **Location:** Abu Dhabi, UAE
+- **Questions:** Open GitHub issue or tag @ArjunFrancis
+
+---
+
+**Last Updated:** November 30, 2025  
+**Repository Version:** 1.0  
+**Status:** Active Development - Documentation & Architecture Phase
